@@ -27,10 +27,10 @@ class HomeScreen extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => RegisterScreen()));
                   },
-                  child: Text('Add new Authority'),
+                  child: const Text('Add new Authority'),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => ReportedComplaintScreen()));
                   },
-                  child: Text('Reported Complaints'),
+                  child: const Text('Reported Complaints'),
                 ),
               ),
             ],

@@ -55,8 +55,6 @@ class ReportedComplaintScreen extends StatelessWidget {
                       final DocumentSnapshot documentSnapshot =
                           streamSnapshot.data!.docs[index];
 
-                      List likedUser = documentSnapshot['votedUser'];
-
                       return Container(
                         padding: const EdgeInsets.only(
                           top: 10,
@@ -200,6 +198,8 @@ Future approveComplaint(DocumentSnapshot documentSnapshot) async {
       'userProfile': documentSnapshot['userProfile'],
       'vote': documentSnapshot['vote'],
       'votedUser': documentSnapshot['votedUser'],
+      'homeFilter': documentSnapshot['homeFilter'],
+      'track': documentSnapshot['track'],
     },
   );
 

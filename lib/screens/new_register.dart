@@ -200,7 +200,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         );
 
         FirebaseFirestore.instance
-            .collection('adminData')
+            .collection('usersData')
             .doc(FirebaseAuth.instance.currentUser!.uid)
             .set(
           {
